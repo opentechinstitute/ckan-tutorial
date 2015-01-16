@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+  <title>CKAN Tutorial script</title>
+
+  <style>
+    html {
+    font-family: Sans-serif;
+    font-size: .9em;
+    color: #1a1a1a;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    }
+    div#page {
+    width: 85%;
+    padding: 0;
+    margin: 2em 10%;
+    background: #ccc;
+    border: 1px solid #aaa;
+    }
+    h1 {
+      text-align: center;
+    }
+  </style>
+  <script src="jquery-2.1.1.min.js"></script>
+  <script src="ckan-basics.js"></script>
+  <script>
+    // this is a jquery document ready function, this actually fires all the actions
+    // on pageload for this tutorial.
+    $(document).ready(function() {
+      firequery('Cybercrime');
+    });
+  </script>
+
+</head>
+<body>
+  <div id="page">
+    <h1>CKan tutorial</h1>
+    <div id="term-heading"></div>
+  </div>
+</body>
+</html>
